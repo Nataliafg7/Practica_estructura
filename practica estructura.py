@@ -1,3 +1,4 @@
+
 class Nodo:
    
     def __init__(self, valor):
@@ -6,6 +7,8 @@ class Nodo:
 
     def __repr__(self) -> str:
         return f"Nodo({self.valor})"
+
+
 
 class ListaEnlazadaSimple:
 
@@ -83,7 +86,6 @@ class Usuario:
 
     def alquilar_libro(self):
         self.num_libros_alquilados += 1
-        
 class Libro:
 
     def __init__(
