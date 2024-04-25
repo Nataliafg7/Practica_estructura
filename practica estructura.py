@@ -155,7 +155,7 @@ class Libreria:
 
         return mensaje
 
-    # Resto del código...
+   
     def crear_libro(self, libro: Libro):
         self.libros.insertar(libro)
 
