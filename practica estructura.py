@@ -1,10 +1,3 @@
-class Usuario:
-    def __init__(self, nombre):
-        self.nombre = nombre
-        self.num_libros_alquilados = 0
-
-    def alquilar_libro(self):
-        self.num_libros_alquilados += 1
 class Nodo:
    
     def __init__(self, valor):
@@ -13,14 +6,6 @@ class Nodo:
 
     def __repr__(self) -> str:
         return f"Nodo({self.valor})"
-
-class Usuario:
-    def __init__(self, nombre):
-        self.nombre = nombre
-        self.libros_alquilados = []
-
-    def alquilar_libro(self, libro):
-        self.libros_alquilados.append(libro)
 
 class ListaEnlazadaSimple:
 
@@ -91,7 +76,14 @@ class ListaEnlazadaSimple:
         _repr += "None"  # Agregar "None" al final para indicar el final de la lista
         return _repr
 
+class Usuario:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.num_libros_alquilados = 0
 
+    def alquilar_libro(self):
+        self.num_libros_alquilados += 1
+        
 class Libro:
 
     def __init__(
